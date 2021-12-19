@@ -1,0 +1,13 @@
+https://sales-web.azurewebsites.net/#/login
+
+
+
+JWT Token
+SPA - Angular 10
+Authentication -  login
+EF 
+MVC - API
+
+
+azure 
+

@@ -1,0 +1,73 @@
+<form #registerForm="ngForm">
+    <div>
+        <div style="background-color:#2F323E;height:50px">
+               <p style="line-height:40px;font-family:'Arial Rounded MT';font-size:x-large;color:white">
+                    &nbsp;&nbsp;Sales Tracking
+                </p>
+           </div>
+        <div class="card">
+             <div class="card-header">
+                <h1 class="card-title" style="font-family:'Arial Rounded MT';line-height:10px">
+                 <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                 </svg>&nbsp;&nbsp;Register
+                </h1>
+             </div>
+             <div class="card-body">
+                    <div class="form-group">
+                        <label class="control-label"><b>Name</b></label>
+                        <input required type="text" class="form-control" name="fname" #fname="ngModel" 
+                        [(ngModel)]="user.Name">
+                        <div class="text-danger" *ngIf="fname.touched">
+                            <p *ngIf="fname.errors?.required">Required</p>
+                        </div>
+                    </div>
+                 <div class="form-group">
+                    <label class="control-label"><b>Email ID</b></label>
+                    <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" 
+                        class="form-control" name="email" #email="ngModel" [(ngModel)]="user.EmailID">
+                    <div class="text-danger" *ngIf="email.touched">
+                        <p *ngIf="email.errors?.required">Required</p>
+                        <p *ngIf="email.errors?.pattern">Invalid email id</p>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label"><b>Password</b></label>
+                            <input required type="password" class="form-control" [(ngModel)]="user.Password"
+                            name="pass" #pass="ngModel">
+                            <div class="text-danger" *ngIf="pass.touched">
+                                <p *ngIf="pass.errors?.required">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="control-label"><b>Confirm Password</b></label>
+                        <input type="password" [pattern]="user.Password" class="form-control" [(ngModel)]="confPass"
+                            name="cpass" #cpass="ngModel">
+                        <div class="text-danger" *ngIf="cpass.touched">
+                            <p *ngIf="cpass.errors?.required">Required</p>
+                            <p *ngIf="cpass.errors?.pattern">Password's do not match</p>
+                        </div>
+                    </div>
+                 </div>
+                <div class="form-group">
+                    <label class="control-label"><b>Mobile No</b></label>   <!--pattern="^[6-9]\d{9}$"-->
+                    <input type="text" class="form-control" required type="text" class="form-control" 
+                    [(ngModel)]="user.ContactNo" name="contact" #contact="ngModel">
+                    <div class="text-danger" *ngIf="contact.touched">
+                        <p *ngIf="contact.errors?.required">Required</p>
+                    </div>
+                </div>
+             </div>
+             <div class="card-footer">
+                <button type="button" class="btn btn-primary" [disabled]="registerForm.invalid"
+                (click)="register()">Login</button>
+             </div>   
+        </div>
+    </div>
+</form>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+    <p style="color: white">Please Wait...</p>
+</ngx-spinner>

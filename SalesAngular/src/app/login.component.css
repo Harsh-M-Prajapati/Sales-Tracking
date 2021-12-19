@@ -1,0 +1,23 @@
+input,select{
+  outline: 0;
+  background: transparent;
+  border: 1px solid black;
+  }
+
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .card{
+    position:fixed;
+    top: 45%;
+    left: 50%;
+    width:31em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

@@ -1,0 +1,15 @@
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\BusinessLayer.dll.config
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\BusinessLayer.dll
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\BusinessLayer.pdb
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\DataAccessLayer.dll
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\EntityFramework.dll
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\DataAccessLayer.pdb
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\DataAccessLayer.dll.config
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\EntityFramework.xml
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\obj\Release\LogicLayer.csproj.AssemblyReference.cache
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\obj\Release\LogicLayer.csproj.CoreCompileInputs.cache
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\obj\Release\LogicLayer.csproj.CopyComplete
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\obj\Release\BusinessLayer.dll
+D:\project-21_22\charan\SalesMangement\Api\SalesApi\BusinessLayer\obj\Release\BusinessLayer.pdb
